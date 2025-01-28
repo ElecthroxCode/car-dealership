@@ -1,0 +1,28 @@
+
+.color1 {color: #1b0e2b;}
+.color2 {color: #7e0754;}
+.color3 {color: #07d3ff;}
+.color4 {color: #0ffff8;}
+.color5 {color: #7efff8;}
+
+
+.header{background-color: #1b0e2b; color: #7efff8; height: 50px; display: grid; align-content: center; padding-left: 6px;}
+.container{background-color: #7efff8;}
+.txt{color: #1b0e2b;}
+.txt-2{color: #7e0754;}
+.content{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    height: 100vh;
+}
+.cars{
+    padding-right: 10px;
+}
+.filter-car{
+   border-left: 2px solid  #7e0754;
+   padding-left: 10px;
+}
+.search{display: flex;}
+button{background-color: #07d3ff; color: #1b0e2b;}
+.footer{background-color: #1b0e2b; height: 100px; color: #0ffff8; text-align:center; display: grid; align-items: center;}

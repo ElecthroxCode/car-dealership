@@ -1,0 +1,31 @@
+<section class="container">
+    <div class="header">
+        <h1>Consultoría Vehicular 'ManuCar'</h1>
+    </div>
+<div class="content">
+    <div class="cars">
+        <h4 class="txt-2">Lista de vehiculos</h4>
+        <ul>
+            @for (c of listCars; track $index) {
+                <li>{{ c.name }}</li>
+            }
+        </ul>
+    </div>
+    <aside class="filter-car">
+        <h3 class="txt">Consulta precio del vehiculo</h3>
+        <div class="search">
+            <input #inputText type="text" name="" id="" placeholder="ej: Toyota Corolla">
+            <button (click)="searchPrice(inputText.value)" type="button">Buscar</button>
+        </div>
+        @if (mark && isFinded) {
+            <app-filter (isFinded)="searchFinalised($event)" [cars]="listCars" [markCar]="mark"></app-filter>
+        }
+    </aside>
+</div>
+<div class="footer">
+    @if (autor) {
+        <p>&copy;2025 {{ autor }}</p>
+    }
+</div>
+</section>
+
